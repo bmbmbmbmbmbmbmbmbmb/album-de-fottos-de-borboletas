@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+    body{
+       
+     background-color: rgb(168, 215, 215);
+
+    }
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+
+}
+
+.foto-album img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+    .foto-album{
+        width: 340px;
+        height: 340px;
+        border: 10px solid rgb(241, 230, 230);
+        box-shadow: 5px 5px 5px rgb(77, 66, 66);
+        flex-grow: 1;
+        transition: transform 0,1s;
+        filter: grayscale(100%);
+        filter:sepia(90deg) hue-rotate(90deg);
+    }
+
+    .foto-album:hover{
+        transform: scale(1.3);
+        filter: saturate();
+    }
